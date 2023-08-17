@@ -6,7 +6,8 @@ import {
 	type MutableRefObject,
 	useCallback,
 	type JSX,
-	type EffectCallback
+	type EffectCallback,
+	default as React
 } from "react";
 
 /**

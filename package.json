@@ -1,6 +1,6 @@
 {
 	"name": "@lakuna/react-canvas",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A React canvas element with a built-in animation.",
 	"keywords": [
 		"front-end"
