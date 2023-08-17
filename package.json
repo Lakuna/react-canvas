@@ -1,0 +1,56 @@
+{
+	"name": "@lakuna/react-canvas",
+	"version": "1.0.0",
+	"description": "A React canvas element with a built-in animation.",
+	"keywords": [
+		"front-end"
+	],
+	"homepage": "https://react-canvas.lakuna.pw",
+	"bugs": {
+		"url": "https://github.com/Lakuna/react-canvas/issues",
+		"email": "tjmartin2003@gmail.com"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Travis Martin",
+		"email": "tjmartin2003@gmail.com",
+		"url": "https://www.lakuna.pw/"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://github.com/sponsors/Lakuna"
+	},
+	"files": [
+		"dist",
+		"src"
+	],
+	"repository": {
+		"type": "git",
+		"url": "github:Lakuna/react-canvas"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "prettier . --check && eslint src",
+		"doc": "typedoc src",
+		"test": ""
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.20",
+		"@typescript-eslint/eslint-plugin": "^6.1.0",
+		"@typescript-eslint/parser": "^6.1.0",
+		"eslint": "^8.45.0",
+		"eslint-config-prettier": "^9.0.0",
+		"prettier": "^3.0.2",
+		"typedoc": "^0.24.8",
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"react": "^18.2.0"
+	},
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"types": "./dist/index.d.ts",
+	"type": "module",
+	"sideEffects": false
+}
