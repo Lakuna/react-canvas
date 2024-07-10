@@ -1,6 +1,6 @@
 {
 	"name": "@lakuna/react-canvas",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A React canvas element with a built-in animation.",
 	"keywords": [
 		"front-end"
@@ -8,12 +8,12 @@
 	"homepage": "https://react-canvas.lakuna.pw",
 	"bugs": {
 		"url": "https://github.com/Lakuna/react-canvas/issues",
-		"email": "travis@lakuna.com"
+		"email": "travis@lakuna.pw"
 	},
 	"license": "MIT",
 	"author": {
 		"name": "Travis Martin",
-		"email": "travis@lakuna.com",
+		"email": "travis@lakuna.pw",
 		"url": "https://www.lakuna.pw/"
 	},
 	"funding": {
