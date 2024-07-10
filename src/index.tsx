@@ -34,7 +34,7 @@ export default function ReactCanvas(
 
 	const effectCallback = () => {
 		if (canvas.current === null) {
-			return () => void 0;
+			return () => void null;
 		}
 
 		renderStep.current = init(canvas.current);

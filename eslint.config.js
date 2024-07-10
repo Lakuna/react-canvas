@@ -29,7 +29,6 @@ export default tseslint.config(
 			"no-inline-comments": "off",
 			"no-label-var": "off",
 			"no-labels": "off",
-			"no-magic-numbers": "off", // WebGL
 			"no-nested-ternary": "off",
 			"no-plusplus": "off",
 			"no-restricted-exports": "off",
