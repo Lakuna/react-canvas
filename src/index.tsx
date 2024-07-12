@@ -1,6 +1,7 @@
 import {
 	type CanvasHTMLAttributes,
 	type DetailedHTMLProps,
+	type JSX,
 	useCallback,
 	useEffect,
 	useRef
@@ -18,7 +19,7 @@ export default function ReactCanvas(
 		CanvasHTMLAttributes<HTMLCanvasElement>,
 		HTMLCanvasElement
 	>
-) {
+): JSX.Element {
 	const canvas = useRef(null as HTMLCanvasElement | null);
 	const renderStep = useRef(null as FrameRequestCallback | null);
 	const doDisableCanvas = useRef(false);
