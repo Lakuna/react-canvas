@@ -39,7 +39,7 @@
 		// N/A
 
 		// Language and Environment
-		"jsx": "react",
+		"jsx": "react-jsx",
 		"target": "esnext",
 
 		// Projects

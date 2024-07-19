@@ -7,19 +7,25 @@ import {
 	useRef
 } from "react";
 
+/** The props that can be applied to a `ReactCanvas`. */
+export interface ReactCanvasProps
+	extends DetailedHTMLProps<
+		CanvasHTMLAttributes<HTMLCanvasElement>,
+		HTMLCanvasElement
+	> {
+	/** The initialization step, which is executed once when the animation starts. It should return a function representing the render step, which is executed once for every frame in the animation. */
+	init: (canvas: HTMLCanvasElement) => FrameRequestCallback;
+}
+
 /**
  * A React canvas element with a built-in animation.
- * @param init - The initialization step, which is executed once when the animation starts. It should return a function representing the render step, which is executed once for every frame in the animation.
  * @param props - The properties to apply to the canvas.
  * @returns The canvas.
  */
-export default function ReactCanvas(
-	init: (canvas: HTMLCanvasElement) => FrameRequestCallback,
-	props: DetailedHTMLProps<
-		CanvasHTMLAttributes<HTMLCanvasElement>,
-		HTMLCanvasElement
-	>
-): JSX.Element {
+export default function ReactCanvas({
+	init,
+	...props
+}: ReactCanvasProps): JSX.Element {
 	const canvas = useRef(null as HTMLCanvasElement | null);
 	const renderStep = useRef(null as FrameRequestCallback | null);
 	const doDisableCanvas = useRef(false);
