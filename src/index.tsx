@@ -24,8 +24,12 @@ export interface ReactCanvasProps
  */
 export default function ReactCanvas({
 	init,
+	ref,
 	...props
 }: ReactCanvasProps): JSX.Element {
+	// Disregard the passed `ref` so that it doesn't conflict with the built-in `canvas` ref.
+	void ref;
+
 	const canvas = useRef(null as HTMLCanvasElement | null);
 	const renderStep = useRef(null as FrameRequestCallback | null);
 	const doDisableCanvas = useRef(false);
@@ -41,10 +45,11 @@ export default function ReactCanvas({
 
 	const effectCallback = () => {
 		if (canvas.current === null) {
-			return () => void null;
+			return () => void 0;
 		}
 
 		renderStep.current = init(canvas.current);
+		doDisableCanvas.current = false;
 		requestAnimationFrame(tick);
 
 		return () => {
