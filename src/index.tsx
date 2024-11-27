@@ -1,21 +1,10 @@
-import {
-	type CanvasHTMLAttributes,
-	type DetailedHTMLProps,
-	type JSX,
-	useCallback,
-	useEffect,
-	useRef
-} from "react";
+import { type JSX, useCallback, useEffect, useRef } from "react";
 
 /** The props that can be applied to a `ReactCanvas`. */
-export interface ReactCanvasProps
-	extends DetailedHTMLProps<
-		CanvasHTMLAttributes<HTMLCanvasElement>,
-		HTMLCanvasElement
-	> {
+export type ReactCanvasProps = JSX.IntrinsicElements["canvas"] & {
 	/** The initialization step, which is executed once when the animation starts. It should return a function representing the render step, which is executed once for every frame in the animation. */
 	init: (canvas: HTMLCanvasElement) => FrameRequestCallback;
-}
+};
 
 /**
  * A React canvas element with a built-in animation.
