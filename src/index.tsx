@@ -4,8 +4,10 @@ import { type JSX, useCallback, useEffect, useRef } from "react";
  * The props that can be applied to a `ReactCanvas`.
  * @public
  */
-export interface ReactCanvasProps
-	extends Omit<JSX.IntrinsicElements["canvas"], "ref"> {
+export interface ReactCanvasProps extends Omit<
+	JSX.IntrinsicElements["canvas"],
+	"ref"
+> {
 	/** The initialization step, which is executed once when the animation starts. It should return a function representing the render step, which is executed once for every frame in the animation. */
 	init: (canvas: HTMLCanvasElement) => FrameRequestCallback;
 }
