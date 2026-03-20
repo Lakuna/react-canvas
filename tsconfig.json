@@ -16,7 +16,7 @@
 
 		// Modules
 		"module": "nodenext",
-		"resolveJsonModule": true,
+		"noUncheckedSideEffectImports": true,
 		"rootDir": "src",
 
 		// Emit
@@ -40,7 +40,9 @@
 
 		// Language and Environment
 		"jsx": "react-jsx",
-		"target": "esnext",
+
+		// Compiler Diagnostics
+		// N/A
 
 		// Projects
 		"composite": true,

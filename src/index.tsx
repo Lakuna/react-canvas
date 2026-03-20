@@ -1,7 +1,7 @@
 import { type JSX, useCallback, useEffect, useRef } from "react";
 
 /**
- * The props that can be applied to a `ReactCanvas`.
+ * The properties that can be applied to a `ReactCanvas`.
  * @public
  */
 export interface ReactCanvasProps extends Omit<
@@ -37,14 +37,14 @@ export default function ReactCanvas({
 
 	const effectCallback = () => {
 		if (canvas.current === null) {
-			return () => void 0;
+			return (): void => void 0;
 		}
 
 		renderStep.current = init(canvas.current);
 		doDisableCanvas.current = false;
 		requestAnimationFrame(tick);
 
-		return () => {
+		return (): void => {
 			doDisableCanvas.current = true;
 		};
 	};
