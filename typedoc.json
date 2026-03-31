@@ -1,0 +1,16 @@
+{
+	"$schema": "https://typedoc.org/schema.json",
+	"externalSymbolLinkMappings": {
+		"react": {
+			"canvas": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement"
+		},
+		"typescript": {
+			"FrameRequestCallback": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame#callback",
+			"HTMLCanvasElement": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement",
+			"Omit": "https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys"
+		}
+	},
+	"hostedBaseUrl": "https://umath.lakuna.pw/",
+	"name": "μMath",
+	"navigationLinks": { "GitHub": "https://github.com/Lakuna/umath" }
+}
