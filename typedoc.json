@@ -10,7 +10,7 @@
 			"Omit": "https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys"
 		}
 	},
-	"hostedBaseUrl": "https://umath.lakuna.pw/",
-	"name": "μMath",
-	"navigationLinks": { "GitHub": "https://github.com/Lakuna/umath" }
+	"hostedBaseUrl": "https://react-canvas.lakuna.pw/",
+	"name": "React Canvas",
+	"navigationLinks": { "GitHub": "https://github.com/Lakuna/react-canvas" }
 }
