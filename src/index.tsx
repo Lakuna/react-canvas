@@ -9,6 +9,7 @@ export interface ReactCanvasProps extends Omit<
 	"ref"
 > {
 	/** The initialization step, which is executed once when the animation starts. It should return a function representing the render step, which is executed once for every frame in the animation. */
+	// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 	init: (canvas: HTMLCanvasElement) => FrameRequestCallback;
 }
 
@@ -18,6 +19,7 @@ export interface ReactCanvasProps extends Omit<
  * @returns The canvas.
  * @public
  */
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
 export default function ReactCanvas({
 	init,
 	...props
