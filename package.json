@@ -1,29 +1,46 @@
 {
-	"name": "@lakuna/react-canvas",
-	"version": "2.0.7",
-	"description": "A React canvas element with a built-in animation.",
-	"keywords": [
-		"front-end"
-	],
-	"homepage": "https://react-canvas.lakuna.pw",
-	"bugs": {
-		"url": "https://github.com/Lakuna/react-canvas/issues",
-		"email": "travis@lakuna.pw"
-	},
-	"license": "MIT",
 	"author": {
 		"name": "Travis Martin",
 		"email": "travis@lakuna.pw",
 		"url": "https://www.lakuna.pw/"
 	},
-	"funding": {
-		"type": "individual",
-		"url": "https://github.com/sponsors/Lakuna"
+	"bugs": {
+		"url": "https://github.com/Lakuna/react-canvas/issues",
+		"email": "travis@lakuna.pw"
 	},
+	"dependencies": {
+		"react": "^19.2.6"
+	},
+	"description": "A React canvas element with a built-in animation.",
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@types/react": "^19.2.14",
+		"eslint": "^10.3.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-perfectionist": "^5.9.0",
+		"eslint-plugin-prettier": "^5.5.5",
+		"eslint-plugin-tsdoc": "^0.5.2",
+		"globals": "^17.6.0",
+		"prettier": "^3.8.3",
+		"typedoc": "^0.28.19",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.59.2"
+	},
+	"exports": "./dist/index.js",
 	"files": [
 		"dist",
 		"src"
 	],
+	"funding": {
+		"type": "individual",
+		"url": "https://github.com/sponsors/Lakuna"
+	},
+	"homepage": "https://react-canvas.lakuna.pw",
+	"keywords": [
+		"front-end"
+	],
+	"license": "MIT",
+	"name": "@lakuna/react-canvas",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Lakuna/react-canvas.git"
@@ -34,27 +51,8 @@
 		"fix": "eslint --fix",
 		"lint": "eslint"
 	},
-	"devDependencies": {
-		"@eslint/js": "^10.0.1",
-		"@types/eslint": "^9.6.1",
-		"@types/eslint-config-prettier": "^6.11.3",
-		"@types/react": "^19.2.14",
-		"eslint": "^10.1.0",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-perfectionist": "^5.7.0",
-		"eslint-plugin-prettier": "^5.5.5",
-		"eslint-plugin-tsdoc": "^0.5.2",
-		"globals": "^17.4.0",
-		"prettier": "^3.8.1",
-		"typedoc": "^0.28.18",
-		"typescript": "^6.0.2",
-		"typescript-eslint": "^8.58.0"
-	},
-	"dependencies": {
-		"react": "^19.2.4"
-	},
-	"exports": "./dist/index.js",
-	"typings": "./dist/index.d.ts",
+	"sideEffects": false,
 	"type": "module",
-	"sideEffects": false
+	"typings": "./dist/index.d.ts",
+	"version": "2.0.8"
 }

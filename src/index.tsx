@@ -1,4 +1,6 @@
-import { type JSX, useCallback, useEffect, useRef } from "react";
+import type { JSX } from "react/jsx-runtime";
+
+import { useCallback, useEffect, useRef } from "react";
 
 /**
  * The properties that can be applied to a `ReactCanvas`.
